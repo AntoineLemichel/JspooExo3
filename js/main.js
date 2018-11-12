@@ -6,7 +6,6 @@ function Cards(title, phrase, description) {
   this.title = title;
   this.phrase = phrase;
   this.description = description;
-
   this.getValue = function () {
 
     title = document.getElementById("title").value;
@@ -15,8 +14,8 @@ function Cards(title, phrase, description) {
     this.createProducts(title, phrase, description);
 
   }
-  
-  this.createProducts = function(title, phrase, description){
+
+  this.createProducts = function (title, phrase, description) {
 
     parentManager = document.getElementById('cardList');
     childElement = document.createElement('div');
@@ -34,8 +33,8 @@ function Cards(title, phrase, description) {
     this.clearAllInput();
   }
 
-  this.clearAllInput = function(title, phrase, description){
-    title = document.getElementById('title'). value = "";
+  this.clearAllInput = function (title, phrase, description) {
+    title = document.getElementById('title').value = "";
     phrase = document.getElementById('phrase').value = "";
     description = document.getElementById('description').value = "";
   }
